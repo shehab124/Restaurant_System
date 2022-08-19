@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BonusSceneController">
+   <children>
+      <Label layoutX="11.0" layoutY="201.0" text="Extre Hours" textFill="#cf1212">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font></Label>
+      <TextField fx:id="salary" layoutX="108.0" layoutY="139.0" />
+      <TextField fx:id="extraHours" layoutX="117.0" layoutY="199.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextField fx:id="bonusPerHour" layoutX="126.0" layoutY="273.0" />
+      <Label layoutX="22.0" layoutY="66.0" prefHeight="26.0" prefWidth="65.0" text="Name" textFill="#cf1212">
+         <font>
+            <Font name="Bell MT Bold" size="19.0" />
+         </font></Label>
+      <Label layoutX="22.0" layoutY="139.0" prefHeight="26.0" prefWidth="65.0" text="Salary" textFill="#cf1212">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="11.0" layoutY="277.0" prefHeight="18.0" prefWidth="107.0" text="Bonus Per Hour" textFill="#cf1212">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="300.0" layoutY="351.0" prefHeight="18.0" prefWidth="122.0" text="Total" textFill="#cf1212">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font></Label>
+      <Button layoutX="494.0" layoutY="348.0" mnemonicParsing="false" onAction="#calculate" text="Calculate" />
+      <Label layoutX="234.0" layoutY="14.0" text="Bonus" textFill="#b41111">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="108.0" layoutY="67.0" />
+      <Label fx:id="total" layoutX="345.0" layoutY="347.0" prefHeight="26.0" prefWidth="87.0" textFill="#cc0c0c">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="22.0" layoutY="348.0" mnemonicParsing="false" onAction="#managerScene" text="Back" textFill="#960e0e" />
+   </children>
+</AnchorPane>

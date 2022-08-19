@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TakeOrderSceneController">
+   <children>
+      <Button layoutX="435.0" layoutY="98.0" mnemonicParsing="false" onAction="#changeSceneToInPlaceView" prefHeight="52.0" prefWidth="122.0" text="In place" textAlignment="CENTER" textFill="#e41515">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="441.0" layoutY="224.0" mnemonicParsing="false" onAction="#deliveryScene" prefHeight="52.0" prefWidth="114.0" text="Delivery" textAlignment="CENTER" textFill="#e41515">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font></Button>
+      <Button layoutX="528.0" layoutY="359.0" mnemonicParsing="false" onAction="#waiterScene" prefHeight="29.0" prefWidth="54.0" text="Back" textAlignment="CENTER" textFill="#9e0808">
+         <font>
+            <Font name="Bauhaus 93" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="403.0" fitWidth="403.0" layoutX="-6.0">
+         <image>
+            <Image url="file:/D:/AAST/term%206/OOP/dani_montesinos_mcdonalds_04.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

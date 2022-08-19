@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="567.0" prefWidth="805.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InPlaceSceneController">
+   <children>
+      <Label layoutX="363.0" layoutY="39.0" prefHeight="18.0" prefWidth="95.0" text="select table" textFill="#ea0707">
+         <font>
+            <Font name="Bernard MT Condensed" size="19.0" />
+         </font></Label>
+      <Label layoutX="74.0" layoutY="121.0" prefHeight="18.0" prefWidth="102.0" text="Fried Chicken" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="301.0" layoutY="121.0" text="Cheeseburger" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="512.0" layoutY="120.0" text="Grilled Chicken" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="170.0" layoutY="117.0" mnemonicParsing="false" onAction="#plusFried" text="+" />
+      <Button layoutX="234.0" layoutY="117.0" mnemonicParsing="false" onAction="#minusFried" text="-" />
+      <Label fx:id="fried" layoutX="208.0" layoutY="121.0" text="0" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="399.0" layoutY="117.0" mnemonicParsing="false" onAction="#plusBurgerSand" text="+" />
+      <Button layoutX="457.0" layoutY="117.0" mnemonicParsing="false" onAction="#minusBurgerSand" text="-" />
+      <Label fx:id="burger" layoutX="436.0" layoutY="121.0" text="0" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="615.0" layoutY="117.0" mnemonicParsing="false" onAction="#plusGrilled" text="+" />
+      <Button layoutX="675.0" layoutY="117.0" mnemonicParsing="false" onAction="#minusGrilled" text="-" />
+      <Label fx:id="grilled" layoutX="653.0" layoutY="121.0" text="0" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="169.0" layoutY="299.0" mnemonicParsing="false" onAction="#plusCheeseFried" text="+" />
+      <Button layoutX="233.0" layoutY="299.0" mnemonicParsing="false" onAction="#minusCheeseFried" text="-" />
+      <Label fx:id="cheeseFried" layoutX="207.0" layoutY="303.0" text="0" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="165.0" layoutY="351.0" mnemonicParsing="false" onAction="#plusBBQFired" text="+" />
+      <Button layoutX="229.0" layoutY="351.0" mnemonicParsing="false" onAction="#minusBBQFried" text="-" />
+      <Label fx:id="BBQFried" layoutX="203.0" layoutY="355.0" text="0" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="167.0" layoutY="406.0" mnemonicParsing="false" onAction="#plusRanchFried" text="+" />
+      <Button layoutX="231.0" layoutY="406.0" mnemonicParsing="false" onAction="#minusRanchFried" text="-" />
+      <Label fx:id="ranchFried" layoutX="205.0" layoutY="410.0" text="0" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="92.0" layoutY="302.0" prefHeight="18.0" prefWidth="59.0" text="Cheese" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="96.0" layoutY="361.0" prefHeight="18.0" prefWidth="38.0" text="BBQ" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="97.0" layoutY="410.0" prefHeight="18.0" prefWidth="48.0" text="Ranch" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="399.0" layoutY="297.0" mnemonicParsing="false" onAction="#plusCheeseSauceBurger" text="+" />
+      <Button layoutX="463.0" layoutY="297.0" mnemonicParsing="false" onAction="#minusCheeseSauceBurger" text="-" />
+      <Label fx:id="cheeseBurger" layoutX="437.0" layoutY="301.0" text="0" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="395.0" layoutY="349.0" mnemonicParsing="false" onAction="#plusBBQBurger" text="+" />
+      <Button layoutX="459.0" layoutY="349.0" mnemonicParsing="false" onAction="#minusBBQBurger" text="-" />
+      <Label fx:id="BBQBurger" layoutX="433.0" layoutY="353.0" text="0" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="397.0" layoutY="404.0" mnemonicParsing="false" onAction="#plusRanchBurger" text="+" />
+      <Button layoutX="461.0" layoutY="404.0" mnemonicParsing="false" onAction="#minusRanchBurger" text="-" />
+      <Label fx:id="RanchBurger" layoutX="435.0" layoutY="408.0" text="0" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="310.0" layoutY="301.0" text="Cheese" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="320.0" layoutY="352.0" text="BBQ" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="311.0" layoutY="410.0" prefHeight="18.0" prefWidth="48.0" text="Ranch" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="613.0" layoutY="297.0" mnemonicParsing="false" onAction="#plusCheeseGrilled" text="+" />
+      <Button layoutX="677.0" layoutY="297.0" mnemonicParsing="false" onAction="#minusCheeseGrilled" text="-" />
+      <Label fx:id="cheeseGrilled" layoutX="651.0" layoutY="301.0" text="0" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="609.0" layoutY="349.0" mnemonicParsing="false" onAction="#plusBBQGrilled" text="+" />
+      <Button layoutX="673.0" layoutY="349.0" mnemonicParsing="false" onAction="#minusBBQGrilled" text="-" />
+      <Label fx:id="BBQGrilled" layoutX="647.0" layoutY="353.0" text="0" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="611.0" layoutY="404.0" mnemonicParsing="false" onAction="#plusRanchGrilled" text="+" />
+      <Button layoutX="675.0" layoutY="404.0" mnemonicParsing="false" onAction="#minusRanchGrilled" text="-" />
+      <Label fx:id="ranchGrilled" layoutX="649.0" layoutY="408.0" text="0" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="524.0" layoutY="301.0" text="Cheese" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="534.0" layoutY="352.0" text="BBQ" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="529.0" layoutY="408.0" prefHeight="18.0" prefWidth="48.0" text="Ranch" textFill="#ea0707">
+         <font>
+            <Font name="Arial Nova Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="356.0" layoutY="501.0" mnemonicParsing="false" onAction="#receipt" prefHeight="36.0" prefWidth="102.0" text="Receipt" textFill="#8c2121">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="16.0" />
+         </font></Button>
+      <ComboBox fx:id="c" layoutX="336.0" layoutY="71.0" prefWidth="150.0" />
+      <ImageView fitHeight="112.0" fitWidth="178.0" layoutX="309.0" layoutY="164.0">
+         <image>
+            <Image url="file:/D:/AAST/term%206/OOP/https___s3-images.ladbible.com_s3_content_bef386a35f9baf1a55baa51b21a12512.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="200.0" layoutX="72.0" layoutY="143.0">
+         <image>
+            <Image url="file:/D:/AAST/term%206/OOP/crispy-chicken-strips-paper-box-dark-background-junk-fast-food-concept-selective-focus-copy-space-text_124865-2156.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="126.0" fitWidth="178.0" layoutX="532.0" layoutY="156.0">
+         <image>
+            <Image url="file:/D:/AAST/term%206/OOP/171751_tabitharwheeler_32e01bc5-c59f-4ddd-b4b1-6ae3191d0f9c.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="27.600006103515625" endY="-45.90000534057617" layoutX="266.0" layoutY="39.0" startX="27.600006103515625" startY="540.3999633789062" stroke="#dc2121" />
+      <Line endX="27.600006103515625" endY="-45.90000534057617" layoutX="479.0" layoutY="49.0" startX="27.600006103515625" startY="529.8928833007812" stroke="#dc2121" />
+      <Button fx:id="ToTakeOrder" layoutX="731.0" layoutY="537.0" mnemonicParsing="false" onAction="#backtotakeorder" prefHeight="26.0" prefWidth="59.0" text="Back" textFill="#a90f0f">
+         <font>
+            <Font name="Arial Narrow Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
